@@ -1,0 +1,36 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: quant-market
+
+logging:
+  level:
+    com.quant.market: debug
+    org.springframework.web: debug
+
+# 市场模块配置
+market:
+  # Tushare Pro API Token（请替换为您的Token）
+  tushare-token: ${TUSHARE_TOKEN:}
+  # Tushare API地址
+  tushare-url: http://api.tushare.pro
+  # 东方财富API地址
+  east-money-url: https://push2.eastmoney.com
+  # L1内存缓存TTL（秒），默认60秒
+  memory-cache-ttl: 60
+  # L2文件缓存TTL（秒），默认3600秒（1小时）
+  file-cache-ttl: 3600
+  # 内存缓存最大条目数
+  memory-cache-max-size: 1000
+  # 文件缓存目录
+  file-cache-dir: ./cache/market
+  # 是否启用缓存
+  cache-enabled: true
+  # 数据源优先级：tushare,eastmoney
+  data-source-priority: tushare,eastmoney
+  # HTTP请求超时时间（毫秒）
+  http-timeout: 10000
+  # 是否启用模拟数据（当所有数据源都不可用时）
+  mock-data-enabled: true

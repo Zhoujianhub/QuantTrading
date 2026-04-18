@@ -1,0 +1,33 @@
+# Quant Analysis Executor Dependencies
+
+# LangChain and LangGraph
+langchain>=0.1.0
+langgraph>=0.0.20
+
+# LLM Providers
+openai>=1.0.0
+deepseek>=0.1.0
+
+# Flask for HTTP server
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# HTTP Client
+requests>=2.31.0
+httpx>=0.25.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Caching
+redis>=5.0.0
+
+# Logging
+loguru>=0.7.0
+
+# Testing
+pytest>=7.4.0
+
+# Utils
+python-dateutil>=2.8.0

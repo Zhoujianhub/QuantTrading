@@ -1,0 +1,26 @@
+# IDE
+.idea/
+*.iml
+.classpath
+.factorypath
+.project
+.settings/
+
+# Build outputs
+target/
+bin/
+
+# Python test files in root
+test_*.py
+
+# Python virtual env
+venv/
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
